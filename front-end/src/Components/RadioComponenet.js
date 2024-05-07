@@ -4,7 +4,7 @@ import '../CSS/radioComponent.css'
 const RadioComponenet = ({text}) => {
     return (
         <div className='form-check-label'>
-            <span>{text}</span>
+            <span className='text'>{text}</span>
         </div>
   )
 }
