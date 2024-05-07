@@ -6,3 +6,4 @@ let slots = ['09:00AM','10:30AM','12:00PM','02:30PM',
              '03:00PM','06:00PM','08:00PM','09:00PM']
 
 exports.moviesList = moviesList
+exports.slots = slots
