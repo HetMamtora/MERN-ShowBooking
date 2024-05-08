@@ -6,16 +6,21 @@ const BsState = (props) => {
     const [movie,changeMovie] = useState('')
     const [time,changeTime] = useState('')
     
-    const [noOfSeats,changeNoOfSeats] = useState({
-        A1:0,A2:0,
-        B1:0,B2:0,B3:0,B4:0,
-        C1:0,C2:0
-    })
+    const [noOfSeat, changeNoOfSeats] = useState({
+        A1: "",
+        A2: "",
+        B1: "",
+        B2: "",
+        B3: "",
+        B4: "",
+        C1: "",
+        C2: "",
+      });
 
     const [lastBookingDetails,setLastBookingDetails] = useState(null)
 
     return(
-        <BsContext.Provider value={{movie,changeMovie,time,changeTime,noOfSeats,changeNoOfSeats,lastBookingDetails}}>
+        <BsContext.Provider value={{movie,changeMovie,time,changeTime,noOfSeat,changeNoOfSeats,lastBookingDetails}}>
             {props.children}
         </BsContext.Provider>
     )
