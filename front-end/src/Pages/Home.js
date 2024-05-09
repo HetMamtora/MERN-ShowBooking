@@ -17,8 +17,43 @@ const Home = () => {
         setErrorMessage,
     } = context
 
+    //Check Negative seat selection
+    const checkNegativeSeatsValidity = (seats) => {
+        for (let seat in seats) {
+          if (Number(seats[seat]) < 0) {
+            return true;
+          }
+        }
+    
+        return false;
+      };
+    
+      //Check 0 for seat selection
+      const checkZeroSeatsValidity = (seats) => {
+        for (let seat in seats) {
+          if (Number(seats[seat]) > 0) {
+            return false;
+          }
+        }
+        return true;
+      };
+
     const handleBookNow = () => {
-        
+        if(!movie){
+            setErrorPopup(true)
+            setErrorMessage("Please select a Movie!")
+        }
+        else if(!time){
+            setErrorPopup(true)
+            setErrorMessage("Please select time slot!")
+        }
+        else if(checkNegativeSeatsValidity(noOfSeat) || checkZeroSeatsValidity(noOfSeat)){
+            setErrorPopup(true)
+            setErrorMessage("Invalid Seats !")
+        }
+        else{
+            handlePostBooking();
+        }
     }
 
     return (
