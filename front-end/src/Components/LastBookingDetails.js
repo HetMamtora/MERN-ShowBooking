@@ -14,7 +14,7 @@ const LastBookingDetails = () => {
 
     return (
         <div className='last-booking-details-main-container'>
-            <h2 className='last-booking-details-heading'>Last Booking Ddetails: </h2>
+            <h2 className='last-booking-details-heading'>Last Booking Details: </h2>
             {lastBookingDetails ? (
                 <>
                 <div className='seats-container'>

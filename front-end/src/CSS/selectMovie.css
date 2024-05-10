@@ -1,7 +1,7 @@
 .SM-heading{
     width: 100%;
     font-size: 22px;
-    color: black;
+    color: white;
 }
 
 .SM-main-container{
@@ -10,5 +10,5 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    color: black;
+    color: white;
 }
