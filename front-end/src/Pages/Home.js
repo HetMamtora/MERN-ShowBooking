@@ -73,7 +73,7 @@ const Home = (props) => {
             <div className='time-seats-container'>
                 <TimeSchedule />
                 <SelectSeats />
-                <button className='btn-booknow' onClick={() => {handleBookNow()}}>Book Now</button>
+                <p><button className='btn-booknow' onClick={() => {handleBookNow()}}>Book Now</button></p>
             </div>
         </div>
         </>

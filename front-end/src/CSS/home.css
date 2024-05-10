@@ -1,8 +1,9 @@
-.container{
+/*.container{
     width: 80%;
     margin: 30px auto;
     padding: 30px 30px 0px 30px;
-    background-color: #f0eaea;
+    background: none;
+    background-color: blue;
     border: 1px solid black;
     box-shadow: 5px 5px 5px rgba(199, 207, 224, 0.6);
 }
@@ -30,6 +31,58 @@
 }
 
 .wrapper{
+    display: flex;
+    flex-grow: 0;
+    overflow: visible;
+}*/
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px 30px 0px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #121212; /* Dark background color */
+    box-shadow: 0px 0px 2rem 0px rgba(254, 253, 253, 0.944); /* Dark box shadow */
+}
+
+.select-movie-container {
+    flex-grow: 1;
+}
+
+.time-seats-container {
+    background: none;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+}
+
+.time-seats-container p {
+    /* Remove display: flex; and align-self: center; */
+    /* Add text-align: center; to horizontally center text within <p> tags */
+    text-align: center;
+    background: none;
+}
+
+
+.btn-booknow {
+    padding: 12px 20px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff; /* White text color */
+    background-color: #4CAF50; /* Green button color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Button box shadow */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-booknow:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.wrapper {
     display: flex;
     flex-grow: 0;
     overflow: visible;
