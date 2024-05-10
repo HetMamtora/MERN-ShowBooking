@@ -5,8 +5,9 @@ import LastBookingDetails from '../Components/LastBookingDetails'
 import TimeSchedule from '../Components/TimeSchedule'
 import SelectSeats from '../Components/SelectSeats'
 import BsContext from '../Context/BsContext'
+import ModalComponent from '../Components/ModalComponent'
 
-const Home = () => {
+const Home = (props) => {
 
     const context = useContext(BsContext)
     const {
@@ -57,6 +58,8 @@ const Home = () => {
     }
 
     return (
+      <>
+        <ModalComponent />
         <div className='container'>
             <div className='wrapper'>
                 <div className='select-movie-container'>
@@ -73,6 +76,7 @@ const Home = () => {
                 <button className='btn-booknow' onClick={() => {handleBookNow()}}>Book Now</button>
             </div>
         </div>
+        </>
   )
 }
 

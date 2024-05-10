@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import BsContext from "./BsContext";
 
 const BsState = (props) => {
     
-    const [movie,changeMovie] = useState('')
-    const [time,changeTime] = useState('')
-    const [errorPopup,setErrorPopup] = useState(false)
-    const [errorMessage,setErrorMessage] = useState('')
+    const [movie, changeMovie] = useState('')
+    const [time, changeTime] = useState('')
+    const [errorPopup, setErrorPopup] = useState(false);
+    const [errorMessage, setErrorMessage] = useState("");
     
     const [noOfSeat, changeNoOfSeats] = useState({
         A1: "",
@@ -42,9 +42,16 @@ const BsState = (props) => {
         if(response.status === 200){
             changeTime("")
             changeMovie("")
-            /*changeNoOfSeats({
-
-            })*/
+            changeNoOfSeats({
+                A1: "",
+                A2: "",
+                B1: "",
+                B2: "",
+                B3: "",
+                B4: "",
+                C1: "",
+                C2: "",
+            })
             setLastBookingDetails(data.data)
 
             window.localStorage.clear()
