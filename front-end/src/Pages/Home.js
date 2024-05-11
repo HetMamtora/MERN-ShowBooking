@@ -61,6 +61,7 @@ const Home = (props) => {
       <>
         <ModalComponent />
         <div className='container'>
+            <h1 className='container-header'>MOVIE SHOW BOOKING</h1>
             <div className='wrapper'>
                 <div className='select-movie-container'>
                     <SelectMovie />

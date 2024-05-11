@@ -12,7 +12,7 @@ const SelectSeats = () => {
 
     return (
         <div className='ss-wrapper'>
-            <h1 className='ss-heading'>Select Seats</h1>
+            <h1 className='ss-heading'>SELECT SEATS</h1>
 
             <div className='ss-main-container'>
                 {seats.map((el,index) => {

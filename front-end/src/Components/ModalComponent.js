@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import BsContext from '../Context/BsContext'
 import '../CSS/modalComponent.css'
+import { FaWindowClose } from "react-icons/fa";
 
 const ModalComponent = () => {
     
@@ -17,13 +18,13 @@ const ModalComponent = () => {
             <div className={`modal-container${errorPopup ? "active" : "inactive"}`}>
                 <div className='modal'>
                     <div className='modal-header'>
-                        <strong>Message</strong>
+                        <strong className='message-box'>MESSAGE</strong>
                     </div>
                     <div className='modal-body'>
                         <span>{errorMessage}</span>
                     </div>
                     <div className='modal-footer'>
-                        <button onClick={handleClosePopup}>Close</button>
+                        <FaWindowClose className='button-close' onClick={handleClosePopup}/>
                     </div>
                 </div>
             </div>

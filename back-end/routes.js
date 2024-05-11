@@ -24,7 +24,7 @@ router.post('/booking', async(req,res) => {
 
 router.get('/booking', async(req,res) => {
     try{
-        const myData = await Ticket.find().sort({_id:1}).limit(1);
+        const myData = await Ticket.find().sort({_id:-1}).limit(1);
 
         if(myData.length === 0){
             res.status(200).json({data:null, message:"No Previous Booking Found"})

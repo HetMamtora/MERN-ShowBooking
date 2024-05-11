@@ -2,11 +2,11 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    color: black;
+    color: white;
 }
 
 .ss-heading{
     width: 100%;
-    font-size: 22px;
-    color: black;
+    font-size: 1.5rem;
+    color: white;
 }

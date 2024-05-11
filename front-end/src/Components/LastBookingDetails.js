@@ -14,11 +14,11 @@ const LastBookingDetails = () => {
 
     return (
         <div className='last-booking-details-main-container'>
-            <h2 className='last-booking-details-heading'>Last Booking Details: </h2>
+            <h2 className='last-booking-details-heading'>LAST BOOKING DETAILS </h2>
             {lastBookingDetails ? (
                 <>
                 <div className='seats-container'>
-                    <p className='seats-header'>Seats:</p>
+                    <p className='seats-header'>SEATS</p>
                         <ul className='seats'>
                         {seats.map((seat, index) => (
                             <li className="seat-value" key={index}>
@@ -29,10 +29,10 @@ const LastBookingDetails = () => {
                 </div>
             
                 <p className='slot' style={{textAlign:"left"}}>
-                    Slot: <span>{lastBookingDetails.slot}</span>
+                    SLOT : <span>{lastBookingDetails.slot}</span>
                 </p>
                 <p className='movie'>
-                    Movie: <span>{lastBookingDetails.movie}</span>
+                    MOVIE: <span>{lastBookingDetails.movie}</span>
                 </p>
                 </>
                 ):(

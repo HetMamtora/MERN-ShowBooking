@@ -18,7 +18,7 @@ const TimeSchedule = () => {
     return (
         <>
         <div className='slot-container'>
-            <h1 className='ts-heading'>Select Time</h1>
+            <h1 className='ts-heading'>SELECT TIME</h1>
 
             <div className='ts-main-container'>
                 {slots.map((el,index) => {
